@@ -152,8 +152,6 @@
         .footer-contact i { color: #e67e22; width: 20px; }
         .footer-accreditations { margin-top: 20px; }
         .footer-accreditations img { height: 35px; margin-right: 15px; background: #fff; padding: 5px 10px; border-radius: 4px; }
-        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; }
-        .footer-bottom p { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
         
         /* RESPONSIVE DESIGN */
         @media (max-width: 1024px) {
@@ -192,8 +190,9 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="img/thermacheck-logo.png" alt="ThermaCheck Ltd" style="height: 45px;">
+                    <img src="img/thermacheck-logo.png" alt="ThermaCheck Ltd" style="height: 65px;">
                     <img src="img/RICS-Logo-Black-With-Logo-White-Background.png" alt="RICS Logo" style="height: 40px; margin-left: 15px;">
+                    <img src="img/Elmhurst_approved_logo.png" alt="Elmhurst Energy Approved Assessor" style="height: 40px; margin-left: 15px;">
                 </div>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link">Home</a></li>
@@ -354,7 +353,14 @@
                                 • As-Built SAP + EPC lodgement: £75
                             </td>
                         </tr>
-                        <tr><td>Extension/Conversion Assessment</td><td>£175</td></tr>
+                        <tr>
+                            <td>Extension Assessment</td>
+                            <td>£175</td>
+                        </tr>
+                        <tr>
+                            <td>Conversion Assessment</td>
+                            <td>£200</td>
+                        </tr>
                         <tr><td>Highly Glazed Extension Assessment</td><td>£200</td></tr>
                         <tr><td>U-Value Calculation</td><td>£45 per element</td></tr>
                         <tr><td>Psi-Value Calculation (Thermal Bridging)</td><td>£40 per junction</td></tr>
@@ -496,7 +502,8 @@
                         <select id="assessment-type" name="assessment-type" required>
                             <option value="">Select service type</option>
                             <option value="sap-assessment">SAP Assessment (New Build)</option>
-                            <option value="extension">Extension/Conversion Assessment</option>
+                            <option value="extension">Extension Assessment</option>
+                            <option value="conversion">Conversion Assessment</option>
                             <option value="highly-glazed">Highly Glazed Extension</option>
                             <option value="u-value">U-Value Calculations</option>
                             <option value="psi-value">Psi-Value (Thermal Bridging) Calculations</option>
@@ -587,6 +594,7 @@
                     </div>
                     <div class="footer-accreditations">
                         <img src="img/RICS-Logo-Black-With-Logo-White-Background.png" alt="RICS">
+                        <img src="img/Elmhurst_approved_logo.png" alt="Elmhurst Energy Approved Assessor">
                     </div>
                 </div>
             </div>
