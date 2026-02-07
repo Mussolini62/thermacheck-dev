@@ -446,7 +446,7 @@
                     <p>Complete the form and we'll provide a detailed quote within 24 hours.</p>
                 </div>
                 <div class="quote-form">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/mpqrbgjj" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -518,17 +518,6 @@
                     });
                 }
             });
-        });
-
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // You'll need to add your form submission logic here
-            // This could be an email service, form backend, etc.
-            
-            alert('Thank you for your quote request. We will contact you within 24 hours.');
-            this.reset();
         });
     </script>
 </body>
