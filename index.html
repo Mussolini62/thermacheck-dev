@@ -72,20 +72,63 @@
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 4rem 2rem;
+            padding: 5rem 2rem 4rem 2rem;
             text-align: center;
         }
 
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            padding-top: 1rem;
         }
 
         .hero p {
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-section h2 {
+            color: #1e3c72;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .credentials {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .credentials ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .credentials li {
+            padding: 0.75rem 0;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .credentials li:before {
+            content: "✓ ";
+            color: #ffa500;
+            font-weight: bold;
+            margin-right: 1rem;
+            font-size: 1.3rem;
         }
 
         .services {
@@ -105,7 +148,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-bottom: 3rem;
         }
 
         .service-card {
@@ -205,6 +247,57 @@
             margin-right: 0.5rem;
         }
 
+        .requirements-section {
+            background: white;
+            padding: 3rem 2rem;
+        }
+
+        .requirements-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .requirements-content h2 {
+            color: #1e3c72;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .requirement-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #ffa500;
+        }
+
+        .requirement-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .requirement-card ul {
+            list-style: none;
+        }
+
+        .requirement-card li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .requirement-card li:before {
+            content: "• ";
+            color: #ffa500;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
         .footer {
             background: #1e3c72;
             color: white;
@@ -228,6 +321,7 @@
         .footer p, .footer a {
             color: #ccc;
             text-decoration: none;
+            line-height: 1.8;
         }
 
         .footer a:hover {
@@ -246,11 +340,15 @@
                 text-align: center;
             }
 
+            .hero {
+                padding: 3rem 1rem 2rem 1rem;
+            }
+
             .hero h1 {
                 font-size: 1.8rem;
             }
 
-            .service-grid, .price-grid {
+            .service-grid, .price-grid, .requirements-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -260,9 +358,8 @@
     <header class="header">
         <div class="header-content">
             <div class="logo-section">
-                <!-- Replace 'path/to/your/logo.png' with your actual logo file path -->
-                <!-- If you don't have a logo yet, you can remove the img tag -->
-                <!-- <img src="path/to/your/logo.png" alt="ThermaCheck Logo" class="logo"> -->
+                <!-- Logo commented out - uncomment and add your logo file path when ready -->
+                <!-- <img src="your-logo.png" alt="ThermaCheck Logo" class="logo"> -->
                 <div class="company-name">ThermaCheck Ltd</div>
             </div>
             <nav>
@@ -343,23 +440,113 @@
         </div>
     </section>
 
+    <section class="requirements-section" id="requirements">
+        <div class="requirements-content">
+            <h2>What We Need From You</h2>
+            <p style="color: #666; margin-bottom: 2rem;">To provide accurate SAP assessments and EPCs, we'll need the following information depending on your project stage:</p>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <h3>Design Stage SAP</h3>
+                    <ul>
+                        <li>Architectural plans and elevations</li>
+                        <li>Building specifications</li>
+                        <li>U-value calculations or construction details</li>
+                        <li>Heating system specifications</li>
+                        <li>Window and door schedules</li>
+                        <li>Ventilation strategy</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card">
+                    <h3>As-Built SAP & EPC</h3>
+                    <ul>
+                        <li>As-built drawings (if available)</li>
+                        <li>Actual construction details</li>
+                        <li>Installed heating system details</li>
+                        <li>Actual window specifications</li>
+                        <li>Any variations from design stage</li>
+                        <li>Site access for inspection (if required)</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card">
+                    <h3>General Information</h3>
+                    <ul>
+                        <li>Site address and postcode</li>
+                        <li>Plot numbers (for developments)</li>
+                        <li>Client contact details</li>
+                        <li>Required completion date</li>
+                        <li>Any specific compliance concerns</li>
+                        <li>Building control reference (if applicable)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="color: #666; margin-top: 2rem; font-style: italic;">Don't worry if you don't have all of this information immediately - we can discuss your specific requirements and work with what's available. Desktop assessments can often proceed with the information you already have.</p>
+        </div>
+    </section>
+
+    <section class="hero" id="about">
+        <h1>45 Years of Building Standards Expertise</h1>
+    </section>
+
+    <section class="content-section">
+        <p>ThermaCheck Ltd is led by a Chartered Building Surveyor with over four decades of experience in Building Control and Building Standards, including senior management positions with a Scottish local authority.</p>
+        
+        <p>This extensive background in regulatory compliance, combined with current accreditation as an Elmhurst Energy Assessor, ensures your SAP assessments and EPCs are prepared with exceptional attention to detail and regulatory knowledge.</p>
+        
+        <div class="credentials">
+            <h3 style="color: #1e3c72; margin-bottom: 1rem;">Professional Credentials</h3>
+            <ul>
+                <li>RICS Chartered Building Surveyor</li>
+                <li>Elmhurst Energy Accredited Assessor</li>
+                <li>45 years Building Control/Building Standards experience</li>
+                <li>Former senior local authority position</li>
+                <li>UK-wide desktop SAP service</li>
+                <li>Expert knowledge of all UK Building Regulations</li>
+            </ul>
+        </div>
+        
+        <h2>Why Choose ThermaCheck?</h2>
+        
+        <p><strong>Regulatory Insight:</strong> Unlike assessors who have only worked in the private sector, our background includes years of evaluating compliance submissions from the authority perspective. This means we understand exactly what building control officers are looking for and can help ensure your projects sail through approval.</p>
+        
+        <p><strong>Technical Depth:</strong> SAP assessments are more than just form-filling. Our Building Standards background means we can identify potential compliance issues early, suggest cost-effective improvements, and provide advice that goes beyond the SAP calculation itself.</p>
+        
+        <p><strong>Professional Standards:</strong> As a RICS Chartered Building Surveyor, we operate to the highest professional and ethical standards, with full professional indemnity insurance and continuing professional development requirements.</p>
+        
+        <p><strong>Practical Experience:</strong> Having worked on thousands of buildings across all types and ages of construction, we bring practical, real-world knowledge to every assessment. We understand construction details, common issues, and workable solutions.</p>
+        
+        <p><strong>Independent Service:</strong> As an independent consultancy, we have no ties to manufacturers, contractors, or product suppliers. Our advice is impartial and focused solely on achieving compliance in the most practical and cost-effective way for your project.</p>
+    </section>
+
     <footer class="footer" id="contact">
         <div class="footer-content">
             <div>
                 <h3>ThermaCheck Ltd</h3>
                 <p>Professional Energy Compliance Services</p>
-                <p>Scotland, UK</p>
+                <p>Serving clients across the UK</p>
+                <p>Based in Scotland</p>
             </div>
             <div>
                 <h3>Services</h3>
                 <p>SAP Assessments</p>
                 <p>Energy Performance Certificates</p>
+                <p>Part L Compliance Advice</p>
                 <p>Building Standards Consultancy</p>
             </div>
             <div>
-                <h3>Contact</h3>
+                <h3>Contact Us</h3>
                 <p>Email: info@thermacheck.co.uk</p>
-                <p>Phone: [Your Phone]</p>
+                <p>Phone: [Your Contact Number]</p>
+                <p>Desktop service available UK-wide</p>
+            </div>
+            <div>
+                <h3>Professional Memberships</h3>
+                <p>RICS Chartered Building Surveyor</p>
+                <p>Elmhurst Energy Accredited</p>
+                <p>Fully Insured</p>
             </div>
         </div>
     </footer>
