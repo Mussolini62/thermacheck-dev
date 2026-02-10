@@ -25,7 +25,7 @@
 
         /* Header Styles */
         header {
-            background: white;
+            background: #e67e22;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
@@ -36,7 +36,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding: 1.2rem 0;
+            padding: 1.5rem 0;
         }
 
         .nav-links {
@@ -48,13 +48,13 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
+            color: white;
+            font-weight: 600;
             transition: color 0.3s;
         }
 
         .nav-links a:hover {
-            color: #e67e22;
+            color: #2c3e50;
         }
 
         /* Hero Section */
@@ -165,17 +165,6 @@
             color: #2c3e50;
         }
 
-        .services-intro {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3rem;
-        }
-
-        .services-intro img {
-            height: 100px;
-            opacity: 0.9;
-        }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -197,6 +186,22 @@
         .service-card h3 {
             color: #e67e22;
             margin-bottom: 1rem;
+        }
+
+        .service-logo-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+        }
+
+        .service-logo-card img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .service-logo-card:hover {
+            transform: none;
         }
 
         /* About Section */
@@ -320,7 +325,7 @@
 
         /* Scroll padding for fixed header */
         html {
-            scroll-padding-top: 80px;
+            scroll-padding-top: 100px;
         }
 
         /* Responsive Design */
@@ -403,9 +408,6 @@
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Professional Energy Compliance Services</h2>
-            <div class="services-intro">
-                <img src="img/thermacheck-logo.png" alt="ThermaCheck Ltd">
-            </div>
             <div class="services-grid">
                 <div class="service-card">
                     <h3>SAP Assessments</h3>
@@ -422,6 +424,9 @@
                 <div class="service-card">
                     <h3>Building Standards Consultancy</h3>
                     <p>Drawing on 45 years in Building Control/Building Standards roles, we provide regulatory advice to help navigate complex compliance requirements and local authority processes.</p>
+                </div>
+                <div class="service-card service-logo-card">
+                    <img src="img/thermacheck-logo.png" alt="ThermaCheck Ltd">
                 </div>
             </div>
         </div>
@@ -446,35 +451,35 @@
                     <tbody>
                         <tr style="border-bottom: 1px solid #e2e8f0;">
                             <td style="padding: 16px 20px;">SAP Assessment (Design Stage for Building Regulations)</td>
-                            <td style="padding: 16px 20px;">£200</td>
+                            <td style="padding: 16px 20px;">£400</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #e2e8f0;">
                             <td style="padding: 16px 20px;">As-Built SAP Review + EPC Lodgement</td>
-                            <td style="padding: 16px 20px;">£75</td>
+                            <td style="padding: 16px 20px;">£125</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #e2e8f0;">
                             <td style="padding: 16px 20px;">Extension/Conversion Assessment</td>
-                            <td style="padding: 16px 20px;">£175</td>
+                            <td style="padding: 16px 20px;">£250</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #e2e8f0;">
                             <td style="padding: 16px 20px;">Highly Glazed Extension Assessment</td>
-                            <td style="padding: 16px 20px;">£200</td>
+                            <td style="padding: 16px 20px;">£275</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #e2e8f0;">
                             <td style="padding: 16px 20px;">U-Value Calculation</td>
-                            <td style="padding: 16px 20px;">£45 per element</td>
+                            <td style="padding: 16px 20px;">£50 per element</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #e2e8f0;">
                             <td style="padding: 16px 20px;">Psi-Value Calculation (Thermal Bridging)</td>
-                            <td style="padding: 16px 20px;">£40 per junction</td>
+                            <td style="padding: 16px 20px;">£50 per junction</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #e2e8f0;">
                             <td style="padding: 16px 20px;">Overheating Assessment</td>
                             <td style="padding: 16px 20px;">POA</td>
                         </tr>
                         <tr>
-                            <td style="padding: 16px 20px;">Building Regulations Advisory (30 min consultation)</td>
-                            <td style="padding: 16px 20px;">£75</td>
+                            <td style="padding: 16px 20px;">Building Regulations Advisory (hourly rate)</td>
+                            <td style="padding: 16px 20px;">£80</td>
                         </tr>
                     </tbody>
                 </table>
@@ -492,7 +497,7 @@
             
             <div style="text-align: center; max-width: 800px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
                 <h3 style="color: #2c3e50; margin-bottom: 15px;">Payment Terms</h3>
-                <p>We ask for a <strong>£50 deposit on instruction</strong> for the Design Stage SAP assessment, with the balance due on completion of that stage. The As-Built review and EPC fee is payable when the dwelling is complete and you're ready for final certification. All invoices are payable within 14 days.</p>
+                <p>We ask for a <strong>£100 deposit on instruction</strong> for the Design Stage SAP assessment, with the balance due on completion of that stage. The As-Built review and EPC fee is payable when the dwelling is complete and you're ready for final certification. All invoices are payable within 14 days.</p>
             </div>
         </div>
     </section>
