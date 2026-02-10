@@ -36,7 +36,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding: 1.2rem 0;
+            padding: 1.8rem 0;
         }
 
         .nav-links {
@@ -165,17 +165,6 @@
             color: #2c3e50;
         }
 
-        .services-intro {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3rem;
-        }
-
-        .services-intro img {
-            height: 100px;
-            opacity: 0.9;
-        }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -197,6 +186,22 @@
         .service-card h3 {
             color: #e67e22;
             margin-bottom: 1rem;
+        }
+
+        .service-logo-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+        }
+
+        .service-logo-card img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .service-logo-card:hover {
+            transform: none;
         }
 
         /* About Section */
@@ -320,7 +325,7 @@
 
         /* Scroll padding for fixed header */
         html {
-            scroll-padding-top: 80px;
+            scroll-padding-top: 100px;
         }
 
         /* Responsive Design */
@@ -403,9 +408,6 @@
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Professional Energy Compliance Services</h2>
-            <div class="services-intro">
-                <img src="img/thermacheck-logo.png" alt="ThermaCheck Ltd">
-            </div>
             <div class="services-grid">
                 <div class="service-card">
                     <h3>SAP Assessments</h3>
@@ -422,6 +424,9 @@
                 <div class="service-card">
                     <h3>Building Standards Consultancy</h3>
                     <p>Drawing on 45 years in Building Control/Building Standards roles, we provide regulatory advice to help navigate complex compliance requirements and local authority processes.</p>
+                </div>
+                <div class="service-card service-logo-card">
+                    <img src="img/thermacheck-logo.png" alt="ThermaCheck Ltd">
                 </div>
             </div>
         </div>
