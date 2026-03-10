@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" ml-update="aware"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - ThermaCheck Ltd</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #e67e22;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1.5rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2c3e50;
+        }
+
+        /* Thank You Section */
+        .thankyou-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 5rem 20px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .thankyou-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .check-icon {
+            width: 80px;
+            height: 80px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem auto;
+            font-size: 2.5rem;
+        }
+
+        .thankyou-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .thankyou-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .thankyou-content p strong {
+            color: #e67e22;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            border: 2px solid #e67e22;
+            margin-top: 1.5rem;
+        }
+
+        .btn-primary:hover {
+            background: #d35400;
+            border-color: #d35400;
+        }
+
+        /* What happens next */
+        .next-steps {
+            padding: 4rem 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        .next-steps h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 2.5rem;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .step-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-top: 4px solid #e67e22;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #e67e22;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0 auto 1rem auto;
+        }
+
+        .step-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .step-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 20px;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="file:///C:/Users/maxmc/Downloads/index.html#services">Services</a></li>
+                <li><a href="file:///C:/Users/maxmc/Downloads/index.html#pricing">Pricing</a></li>
+                <li><a href="file:///C:/Users/maxmc/Downloads/index.html#about">About</a></li>
+                <li><a href="file:///C:/Users/maxmc/Downloads/index.html#quote">Get Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="thankyou-section">
+        <div class="thankyou-content">
+            <div class="check-icon">✓</div>
+            <h1>Thank You for Your Enquiry</h1>
+            <p>Your request has been received successfully.</p>
+            <p>We will review your project details and provide a <strong>detailed quote within 24 hours</strong>.</p>
+            <p>If you have any urgent queries in the meantime, please email us directly at <strong>info@thermacheck.co.uk</strong></p>
+            <a href="file:///C:/Users/maxmc/Downloads/index.html" class="btn-primary">Return to Home</a>
+        </div>
+    </section>
+
+    <section class="next-steps">
+        <h2>What Happens Next</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Enquiry Reviewed</h3>
+                <p>We review your project details and assess your requirements.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Quote Provided</h3>
+                <p>A detailed, transparent quote is sent to you within 24 hours.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Work Commences</h3>
+                <p>On acceptance, we begin your SAP assessment or energy statement promptly.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ThermaCheck Ltd. All rights reserved.</p>
+        <p>Registered in Scotland | RICS Chartered Building Surveyor | Elmhurst Energy Accredited</p>
+    </footer>
+
+
+
+</body></html>
