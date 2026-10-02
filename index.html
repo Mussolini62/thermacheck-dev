@@ -66,6 +66,60 @@ transition: color 0.3s;
 color: #2c3e50;
 }
 
+.nav-links a {
+white-space: nowrap;
+}
+
+/* Services dropdown */
+.has-dropdown {
+position: relative;
+}
+
+.caret {
+font-size: 0.75em;
+}
+
+.dropdown {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+margin-top: 0.75rem;
+min-width: 300px;
+padding: 0.5rem 0;
+list-style: none;
+background: white;
+border-radius: 8px;
+box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+z-index: 1001;
+}
+
+.dropdown::before {
+content: "";
+position: absolute;
+top: -0.75rem;
+left: 0;
+right: 0;
+height: 0.75rem;
+}
+
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown {
+display: block;
+}
+
+.dropdown a {
+display: block;
+padding: 0.6rem 1.25rem;
+color: #2c3e50;
+font-weight: 500;
+}
+
+.dropdown a:hover {
+background: #fdf2e9;
+color: #e67e22;
+}
+
 /* Hero Section */
 .hero {
 background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
@@ -381,9 +435,8 @@ margin: 10px;
 <nav class="container">
 <ul class="nav-links">
 <li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#about">About</a></li>
+<li class="has-dropdown"><a href="#services" aria-haspopup="true">Services <span class="caret">&#9662;</span></a>
+<ul class="dropdown">
 <li><a href="https://sap-assessments.thermacheck.co.uk" target="_blank" rel="noopener">SAP Assessments</a></li>
 <li><a href="https://overheating-assessments.thermacheck.co.uk" target="_blank" rel="noopener">Overheating Assessments</a></li>
 <li><a href="https://u-values.thermacheck.co.uk" target="_blank" rel="noopener">U-Value Tool</a></li>
@@ -393,6 +446,10 @@ margin: 10px;
 <li><a href="https://access-statement.thermacheck.co.uk" target="_blank" rel="noopener">Access Statements</a></li>
 <li><a href="https://glazed-extensions.thermacheck.co.uk" target="_blank" rel="noopener">Highly Glazed Extensions</a></li>
 <li><a href="https://conversion-epc.thermacheck.co.uk" target="_blank" rel="noopener">Conversion EPCs</a></li>
+</ul>
+</li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#about">About</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
@@ -757,7 +814,7 @@ exceptional attention to detail and regulatory knowledge.</p>
 <option value="Planning Energy Statements">Planning Energy &amp; Sustainability Statements</option>
 <option value="Access Statements">Access Statements</option>
 <option value="Highly Glazed Extension Assessment">Highly Glazed Extension Assessment</option>
-<option value="Conversion EPC">Conversion EPC (barn, pub, hotel &amp; similar)</option>
+<option value="Conversion/Change of Use to Dwelling">Conversion/Change of Use to Dwelling</option>
 <option value="consultancy">Building Standards Consultancy</option>
 <option value="other">Other - Please specify below</option>
 </select>
