@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18004781098"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18004781098');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ThermaCheck Ltd - SAP Assessments, EPCs and Building Energy Compliance</title>
+<meta name="description" content="SAP assessments, EPCs, U-value calculations, overheating assessments, Planning Energy Statements, Access Statements and percolation testing from a RICS Chartered Building Surveyor with 45 years in Building Control and Building Standards. Desktop service UK-wide.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/tc-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0F1B2E;
+  --ink-2: #16243B;
+  --line-dark: #23334D;
+  --chip: #33476A;
+  --muted-dark: #B8C4D6;
+  --text: #1A2638;
+  --muted: #45556C;
+  --line: #DCE3EC;
+  --amber: #F59E0B;
+  --amber-text: #B45309;
+  --orange: #EA580C;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { font-family: 'DM Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.6; color: #E7ECF3; background: var(--ink); }
+img { max-width: 100%; display: block; }
+a { color: var(--amber); }
+a:hover { color: #FCD34D; }
+h1, h2, h3 { line-height: 1.15; }
+h1, h2 { font-family: 'Sora', system-ui, sans-serif; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 88px 0; }
+.light { background: #FFFFFF; color: var(--text); }
+.light a { color: var(--amber-text); }
+.alt { background: var(--ink-2); }
+.eyebrow { font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px; color: var(--amber); margin-bottom: 12px; }
+.light .eyebrow { color: var(--amber-text); }
+.section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px 32px; margin-bottom: 40px; }
+.section-head h2 { font-size: clamp(30px, 4vw, 42px); max-width: 640px; }
+.section-head p { max-width: 460px; color: var(--muted-dark); }
+.light .section-head p { color: var(--muted); }
+.btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 15px 28px; border-radius: 999px; border: 2px solid transparent; transition: transform .15s, background .15s; }
+.btn:hover { transform: translateY(-2px); }
+.btn-amber { background: var(--amber); color: var(--ink); }
+.btn-amber:hover { background: #FBBF24; color: var(--ink); }
+.btn-ghost { border-color: #4B5E7D; color: #FFFFFF; }
+.btn-ghost:hover { border-color: #FFFFFF; color: #FFFFFF; }
+.btn-dark { background: var(--ink); color: #FFFFFF; }
+.btn-dark:hover { color: #FFFFFF; background: #1E2E4A; }
+
+/* Thermal stripe + header */
+.stripe { display: flex; height: 6px; }
+.stripe span { flex: 1; }
+header { position: sticky; top: 0; z-index: 50; background: rgba(15,27,46,0.97); border-bottom: 1px solid var(--line-dark); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF; }
+.brand img { height: 38px; width: auto; }
+.brand span { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 22px; }
+.brand:hover { color: #FFFFFF; }
+.menu { display: flex; align-items: center; gap: 28px; list-style: none; font-weight: 500; }
+.menu > li > a:not(.btn), .dd-toggle { color: #E7ECF3; text-decoration: none; background: none; border: 0; font: inherit; cursor: pointer; padding: 8px 0; }
+.menu > li > a:not(.btn):hover, .dd-toggle:hover { color: var(--amber); }
+.menu .btn { padding: 11px 22px; }
+.has-dd { position: relative; }
+.dd { display: none; position: absolute; top: 100%; left: -16px; margin-top: 10px; min-width: 320px; list-style: none; background: #FFFFFF; border-radius: 12px; padding: 8px 0; box-shadow: 0 16px 40px rgba(0,0,0,0.35); }
+.dd::before { content: ""; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
+.has-dd:hover .dd, .has-dd:focus-within .dd, .has-dd.open .dd { display: block; }
+.dd a { display: block; padding: 10px 20px; color: var(--text); text-decoration: none; font-weight: 500; }
+.dd a:hover { background: #FDF2E9; color: var(--amber-text); }
+.burger { display: none; background: none; border: 1px solid var(--chip); border-radius: 10px; width: 46px; height: 46px; cursor: pointer; align-items: center; justify-content: center; }
+.burger svg { stroke: #FFFFFF; }
+
+/* Hero */
+.hero { padding: 80px 0 96px; }
+.hero .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 56px; }
+.hero-text { flex: 1 1 520px; min-width: 0; }
+.hero h1 { font-size: clamp(38px, 5.5vw, 60px); color: #FFFFFF; margin-bottom: 24px; }
+.hero p.lead { font-size: 20px; color: var(--muted-dark); max-width: 560px; margin-bottom: 32px; }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 36px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; font-size: 15px; }
+.chips span { border: 1px solid var(--chip); border-radius: 999px; padding: 6px 14px; }
+.hero-media { flex: 1 1 420px; min-width: 0; position: relative; }
+.hero-media img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 24px; }
+.badge { position: absolute; left: -16px; bottom: 28px; background: #FFFFFF; color: var(--ink); border-radius: 14px; padding: 14px 20px; box-shadow: 0 16px 32px rgba(0,0,0,0.35); }
+.badge strong { display: block; font-family: 'Sora', sans-serif; font-size: 24px; }
+.badge span { font-size: 15px; color: var(--muted); }
+
+/* Services */
+.group-title { font-family: 'Sora', sans-serif; font-size: 20px; margin: 48px 0 20px; padding-bottom: 8px; border-bottom: 3px solid var(--orange); display: inline-block; }
+.group-title:first-of-type { margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 22px; }
+.card { border: 1px solid var(--line); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 10px; transition: box-shadow .2s, transform .2s; }
+.card:hover { box-shadow: 0 14px 30px rgba(15,27,46,0.10); transform: translateY(-3px); }
+.card h3 { font-size: 21px; color: var(--text); }
+.card p { color: var(--muted); }
+.card .foot { margin-top: auto; padding-top: 8px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.card .price { font-weight: 700; color: var(--amber-text); }
+.card .more { font-weight: 700; text-decoration: none; }
+.card .more:hover { text-decoration: underline; }
+
+/* Fees table */
+.fees { border-top: 1px solid var(--line); }
+.fee { display: flex; flex-wrap: wrap; gap: 4px 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.fee .name { flex: 1 1 320px; font-weight: 700; font-size: 18px; }
+.fee .val { font-weight: 700; color: var(--amber-text); white-space: nowrap; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 40px; }
+.note { background: #F4F6FA; border-radius: 18px; padding: 26px; color: var(--muted); }
+.note h3 { color: var(--text); font-size: 19px; margin-bottom: 8px; }
+
+/* Photos + steps */
+.photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-bottom: 72px; }
+.photos figure { display: flex; flex-direction: column; gap: 10px; }
+.photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; }
+.photos figcaption { font-size: 15px; color: var(--muted-dark); }
+.steps { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 32px; }
+.steps li { border-top: 3px solid var(--orange); padding-top: 18px; }
+.steps .num { font-family: 'Sora', sans-serif; font-size: 15px; color: var(--amber); }
+.steps h3 { font-size: 21px; color: #FFFFFF; margin: 6px 0 8px; }
+.steps p { color: var(--muted-dark); }
+
+/* Checklist */
+.checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; }
+.check { background: #F4F6FA; border-radius: 18px; padding: 24px; }
+.check h3 { font-size: 18px; color: var(--text); margin-bottom: 10px; }
+.check ul { list-style: none; }
+.check li { position: relative; padding: 6px 0 6px 26px; color: var(--muted); }
+.check li::before { content: ""; position: absolute; left: 0; top: 13px; width: 14px; height: 8px; border-left: 2px solid var(--orange); border-bottom: 2px solid var(--orange); transform: rotate(-45deg); }
+
+/* About */
+.about .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 56px; }
+.about-text { flex: 1 1 520px; min-width: 0; }
+.about blockquote { font-family: 'Sora', sans-serif; font-size: clamp(24px, 3vw, 32px); line-height: 1.35; color: #FFFFFF; margin-bottom: 20px; }
+.about .who { font-weight: 700; color: #FFFFFF; }
+.about .role { color: var(--muted-dark); margin-bottom: 24px; }
+.creds { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 24px; margin-bottom: 28px; }
+.creds li { padding-left: 26px; position: relative; color: #E7ECF3; }
+.creds li::before { content: ""; position: absolute; left: 0; top: 9px; width: 14px; height: 8px; border-left: 2px solid var(--amber); border-bottom: 2px solid var(--amber); transform: rotate(-45deg); }
+.logos { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.logos span { background: #FFFFFF; border-radius: 12px; padding: 10px 16px; display: inline-flex; }
+.logos img { height: 42px; width: auto; }
+.about-photo { flex: 0 1 360px; min-width: 0; }
+.about-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; }
+
+/* CTA band */
+.cta { background: var(--amber); color: var(--ink); border-radius: 28px; padding: 52px 44px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+.cta h2 { font-size: clamp(26px, 3.4vw, 36px); margin-bottom: 6px; }
+.cta p { font-size: 18px; max-width: 640px; }
+
+/* Quote form */
+.quote .wrap { display: flex; flex-wrap: wrap; gap: 56px; }
+.quote-info { flex: 1 1 360px; min-width: 0; }
+.quote-info h2 { font-size: clamp(30px, 4vw, 42px); color: #FFFFFF; margin-bottom: 16px; }
+.quote-info p { color: var(--muted-dark); margin-bottom: 12px; }
+.quote-info .contact { margin-top: 24px; color: #FFFFFF; }
+form { flex: 1 1 520px; min-width: 0; background: #FFFFFF; color: var(--text); border-radius: 24px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field.full { grid-column: 1 / -1; }
+label { font-weight: 700; font-size: 15px; }
+input, select, textarea { font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B9C4D3; border-radius: 10px; background: #FFFFFF; color: var(--text); width: 100%; }
+input:focus, select:focus, textarea:focus { outline: 3px solid rgba(245,158,11,0.45); border-color: var(--amber-text); }
+textarea { min-height: 120px; resize: vertical; }
+.submit-button { grid-column: 1 / -1; font: inherit; font-weight: 700; font-size: 17px; background: var(--ink); color: #FFFFFF; border: 0; border-radius: 999px; padding: 16px 28px; cursor: pointer; }
+.submit-button:hover { background: #1E2E4A; }
+
+footer { border-top: 1px solid var(--line-dark); }
+footer .wrap { padding-top: 40px; padding-bottom: 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; justify-content: space-between; align-items: center; color: var(--muted-dark); font-size: 15px; }
+footer .brand img { height: 30px; }
+footer .brand span { font-size: 18px; }
+
+@media (max-width: 900px) {
+  .burger { display: inline-flex; }
+  .menu { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; background: var(--ink); border-bottom: 1px solid var(--line-dark); padding: 8px 24px 20px; }
+  .menu.open { display: flex; }
+  .menu > li > a:not(.btn), .dd-toggle { display: block; width: 100%; text-align: left; padding: 14px 0; border-bottom: 1px solid var(--line-dark); }
+  .menu .btn { margin-top: 14px; text-align: center; border-bottom: 0; }
+  .has-dd:hover .dd { display: none; }
+  .has-dd.open .dd { display: block; position: static; margin: 0 0 8px; min-width: 0; box-shadow: none; }
+  .badge { left: 12px; }
+  .cta { padding: 36px 24px; }
+  form { padding: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="stripe" aria-hidden="true"><span style="background:#9F1239"></span><span style="background:#DC2626"></span><span style="background:#EA580C"></span><span style="background:#F59E0B"></span><span style="background:#FACC15"></span></div>
+
+<header>
+<nav class="wrap nav" aria-label="Main">
+<a href="#home" class="brand"><img src="img/tc-icon.png" alt=""><span>ThermaCheck</span></a>
+<button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<ul class="menu" id="menu">
+<li class="has-dd">
+<button class="dd-toggle" type="button" aria-expanded="false">Services ▾</button>
+<ul class="dd">
+<li><a href="https://sap-assessments.thermacheck.co.uk">SAP Assessments</a></li>
+<li><a href="https://conversion-epc.thermacheck.co.uk">Conversion / Change of Use EPCs</a></li>
+<li><a href="https://overheating-assessments.thermacheck.co.uk">Overheating Assessments</a></li>
+<li><a href="https://glazed-extensions.thermacheck.co.uk">Highly Glazed Extensions</a></li>
+<li><a href="https://u-values.thermacheck.co.uk">U-Value Calculations</a></li>
+<li><a href="https://planning-energy.thermacheck.co.uk">Planning Energy &amp; Sustainability Statements</a></li>
+<li><a href="https://access-statement.thermacheck.co.uk">Access Statements</a></li>
+<li><a href="https://drainage.thermacheck.co.uk">Percolation Testing &amp; Drainage</a></li>
+<li><a href="https://surface-water.thermacheck.co.uk">Surface Water Soakaways</a></li>
+</ul>
+</li>
+<li><a href="#fees">Fees</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#quote">Contact</a></li>
+<li><a href="#quote" class="btn btn-amber">Get a quote</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+<div class="wrap">
+<div class="hero-text">
+<p class="eyebrow">SAP · EPC · Building Standards</p>
+<h1>SAP and EPCs that pass first time.</h1>
+<p class="lead">Desktop energy assessments for new homes, extensions and conversions across the UK, from a Chartered Building Surveyor who spent 45 years checking them.</p>
+<div class="ctas">
+<a href="#quote" class="btn btn-amber">Get a free quote</a>
+<a href="#how" class="btn btn-ghost">How it works</a>
+</div>
+<div class="chips">
+<span>MRICS Chartered Building Surveyor</span>
+<span>Elmhurst accredited · FL35-0001</span>
+<span>45 years in Building Standards</span>
+</div>
+</div>
+<div class="hero-media">
+<img src="img/hero-house.jpg" alt="A brick house at dusk beside an A to G energy rating scale" width="1000" height="1000">
+<div class="badge"><strong>24 hours</strong><span>to a fixed-price quote</span></div>
+</div>
+</div>
+</section>
+
+<section id="services" class="section light">
+<div class="wrap">
+<div class="section-head">
+<div><p class="eyebrow">Services</p><h2>Energy compliance, start to finish</h2></div>
+<p>Each service has its own page with full details. Prices are guide prices for a single, straightforward dwelling.</p>
+</div>
+
+<h3 class="group-title">Building Regulations &amp; Building Standards</h3>
+<div class="cards">
+<div class="card"><h3>SAP Assessments</h3><p>Design Stage SAP for your Building Warrant or Building Regulations submission, then the As-Built review and EPC lodgement when the dwelling is complete. Desktop service, UK-wide.</p><div class="foot"><span class="price">from £498 + £54</span><a class="more" href="https://sap-assessments.thermacheck.co.uk">More →</a></div></div>
+<div class="card"><h3>Conversion / Change of Use</h3><p>SAP-based EPCs for barns, steadings, pubs, chapels and other buildings becoming a home for the first time. Desktop service, supported by photographs of key elements.</p><div class="foot"><span class="price">from £552</span><a class="more" href="https://conversion-epc.thermacheck.co.uk">More →</a></div></div>
+<div class="card"><h3>Overheating Assessments</h3><p>Standard 3.28 in Scotland and Approved Document O in England, assessed separately from your SAP using the correct simplified method.</p><div class="foot"><span class="price">from £164</span><a class="more" href="https://overheating-assessments.thermacheck.co.uk">More →</a></div></div>
+<div class="card"><h3>Highly Glazed Extensions</h3><p>Area-weighted U-value or full SAP trade-off for bifolds, roof lanterns and floor-to-ceiling glass beyond the standard glazing allowance.</p><div class="foot"><span class="price">from £279</span><a class="more" href="https://glazed-extensions.thermacheck.co.uk">More →</a></div></div>
+<div class="card"><h3>U-Value Calculations</h3><p>Independent U-value calculations for walls, roofs and floors, for Building Control, Building Warrant and SAP submissions.</p><div class="foot"><span class="price">from £49 per element</span><a class="more" href="https://u-values.thermacheck.co.uk">More →</a></div></div>
+<div class="card"><h3>Building Standards Advice</h3><p>Regulatory advice drawing on 45 years in Building Control and Building Standards, from early design checks to tricky compliance problems.</p><div class="foot"><span class="price">£82 per hour</span><a class="more" href="#quote">Ask →</a></div></div>
+</div>
+
+<h3 class="group-title">Planning</h3>
+<div class="cards">
+<div class="card"><h3>Planning Energy &amp; Sustainability Statements</h3><p>Statements showing how your development meets local energy, water efficiency and sustainability policies, as required by many planning authorities.</p><div class="foot"><span class="price">from £328</span><a class="more" href="https://planning-energy.thermacheck.co.uk">More →</a></div></div>
+<div class="card"><h3>Access Statements</h3><p>Part M, M4(2) and M4(3) compliance, and access justifications for barn and building conversions, checked against BS 8300 and Scotland's Section 3.</p><div class="foot"><span class="price">from £245</span><a class="more" href="https://access-statement.thermacheck.co.uk">More →</a></div></div>
+</div>
+
+<h3 class="group-title">Drainage</h3>
+<div class="cards">
+<div class="card"><h3>Percolation Testing &amp; Soakaway Design</h3><p>On-site percolation testing and foul and surface water soakaway design for new dwellings. Site visit, covering Dumfries &amp; Galloway, the Scottish Borders and Cumbria.</p><div class="foot"><span class="price">from £246</span><a class="more" href="https://drainage.thermacheck.co.uk">More →</a></div></div>
+<div class="card"><h3>Surface Water Soakaways for Extensions</h3><p>Percolation testing and surface water soakaway design for house extensions. Site visit, covering Dumfries &amp; Galloway, the Scottish Borders and Cumbria.</p><div class="foot"><span class="price">from £246</span><a class="more" href="https://surface-water.thermacheck.co.uk">More →</a></div></div>
+</div>
+</div>
+</section>
+
+<section id="how" class="section">
+<div class="wrap">
+<div class="photos">
+<figure><img src="img/site-timber-frame.jpg" alt="Timber-frame bungalows under construction, wrapped in breather membrane with OSB roof sarking" loading="lazy" width="1200" height="782"><figcaption>Timber-frame bungalows on site, from Design Stage SAP to As-Built</figcaption></figure>
+<figure><img src="img/site-roof.jpg" alt="New-build bungalow with roof sheathing complete and scaffolding in place" loading="lazy" width="1200" height="788"><figcaption>Roof structure complete, ready for the As-Built review</figcaption></figure>
+</div>
+<div class="section-head"><div><p class="eyebrow">How it works</p><h2>Four simple steps</h2></div><p>SAP assessments are a desktop exercise, so there's no need for a site visit.</p></div>
+<ol class="steps">
+<li><span class="num">01</span><h3>Send your drawings</h3><p>Plans, elevations, sections and your specification. See the checklist below if you're unsure what's needed.</p></li>
+<li><span class="num">02</span><h3>Fixed quote</h3><p>A clear fee and turnaround within 24 hours, agreed before any work starts.</p></li>
+<li><span class="num">03</span><h3>Assessment</h3><p>The calculation, with anything that needs to change flagged before you submit.</p></li>
+<li><span class="num">04</span><h3>Support</h3><p>Help with reasonable Building Control or Verifier queries is included.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="fees" class="section light">
+<div class="wrap">
+<div class="section-head"><div><p class="eyebrow">Fees</p><h2>Guide fees</h2></div><p>All prices include EPC lodgement fees where applicable. Every building is different, so get in touch for an accurate quote.</p></div>
+<div class="fees">
+<div class="fee"><span class="name">SAP Assessment (Design Stage)</span><span class="val">from £498</span></div>
+<div class="fee"><span class="name">As-Built SAP Review + EPC Lodgement</span><span class="val">from £54</span></div>
+<div class="fee"><span class="name">Conversion / Change of Use to Dwelling</span><span class="val">from £552</span></div>
+<div class="fee"><span class="name">Extension / Conversion Assessment</span><span class="val">from £246</span></div>
+<div class="fee"><span class="name">Highly Glazed Extension Assessment</span><span class="val">from £279</span></div>
+<div class="fee"><span class="name">Overheating Assessment (new build)</span><span class="val">from £164</span></div>
+<div class="fee"><span class="name">U-Value Calculation</span><span class="val">£49 per element</span></div>
+<div class="fee"><span class="name">Planning Energy &amp; Sustainability Statement</span><span class="val">from £328</span></div>
+<div class="fee"><span class="name">Access Statement</span><span class="val">from £245</span></div>
+<div class="fee"><span class="name">Percolation Test &amp; Soakaway Design</span><span class="val">from £246</span></div>
+<div class="fee"><span class="name">Building Regulations Advisory</span><span class="val">£82 per hour</span></div>
+</div>
+<div class="notes">
+<div class="note"><h3>Two-stage SAP</h3><p>The Design Stage SAP supports your Building Regulations or Building Warrant application. Months or years later, the As-Built review checks any construction changes and the final EPC is lodged.</p></div>
+<div class="note"><h3>Developments of 5+ dwellings</h3><p>Where house types repeat or specifications are consistent across plots, reduced rates reflect the efficiencies. Get in touch to discuss.</p></div>
+<div class="note"><h3>Payment terms</h3><p>A £100 deposit on instruction for the Design Stage SAP, with the balance on completion of that stage. The As-Built fee is payable when the dwelling is complete. Invoices are payable within 14 days.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="wrap">
+<div class="section-head"><div><p class="eyebrow">What we need from you</p><h2>Send as much of this as you can</h2></div><p>Don't have it all yet? If you're at early design stage, we can advise on minimum specifications to achieve compliance.</p></div>
+<div class="checks">
+<div class="check"><h3>Project information</h3><ul><li>Full property address with postcode</li><li>Site plan at 1:500 showing orientation</li></ul></div>
+<div class="check"><h3>Drawings</h3><ul><li>Scaled floor plans of each storey (1:50)</li><li>Elevations for each elevation</li><li>Sections through the dwelling (1:50)</li></ul></div>
+<div class="check"><h3>Construction</h3><ul><li>Walls, roof and floor build-ups, with insulation type and thickness</li><li>Window and door schedule, with U-values if known</li></ul></div>
+<div class="check"><h3>Heating &amp; hot water</h3><ul><li>Boiler or heat pump make and model</li><li>Cylinder size, emitters and controls</li></ul></div>
+<div class="check"><h3>Ventilation</h3><ul><li>Strategy: natural, MEV or MVHR</li><li>Extractor fan details</li></ul></div>
+<div class="check"><h3>Renewables</h3><ul><li>Solar PV or solar thermal details</li><li>Heat pump specification and other technologies</li></ul></div>
+</div>
+</div>
+</section>
+
+<section id="about" class="section about">
+<div class="wrap">
+<div class="about-text">
+<p class="eyebrow">About</p>
+<blockquote>"I spent 45 years on the Building Standards side of the desk. I know what gets queried, and how to avoid it."</blockquote>
+<p class="who">Max McCall MRICS</p>
+<p class="role">Former Head of Building Standards, Dumfries and Galloway Council</p>
+<ul class="creds">
+<li>RICS Chartered Building Surveyor</li>
+<li>Elmhurst accredited energy assessor</li>
+<li>45 years in Building Control and Building Standards</li>
+<li>UK-wide desktop SAP service</li>
+</ul>
+<div class="logos"><span><img src="img/RICS-Logo-Black-With-Logo-White-Background.png" alt="RICS"></span><span><img src="img/Elmhurst_approved_logo.png" alt="Elmhurst Energy approved"></span></div>
+</div>
+<div class="about-photo"><img src="img/Max%20McCall.png" alt="Max McCall MRICS" width="880" height="1168"></div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 88px">
+<div class="cta">
+<div><h2>Not sure what you need?</h2><p>Book a free 15-minute call to talk through your project and get a clear, no-obligation quote.</p></div>
+<a href="#quote" class="btn btn-dark">Get a free quote</a>
+</div>
+</section>
+
+<section id="quote" class="section alt quote">
+<div class="wrap">
+<div class="quote-info">
+<p class="eyebrow">Get a quote</p>
+<h2>Got drawings? Get a price.</h2>
+<p>Complete the form and we'll come back with a detailed, fixed-price quote within 24 hours.</p>
+<p class="contact">Or email <a href="mailto:info@thermacheck.co.uk">info@thermacheck.co.uk</a></p>
+</div>
+<form id="contactForm" action="https://formspree.io/f/mpqrbgjj" method="POST">
+<div class="field"><label for="name">Full name *</label><input type="text" id="name" name="name" required autocomplete="name"></div>
+<div class="field"><label for="email">Email address *</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+<div class="field"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" autocomplete="tel"></div>
+<div class="field"><label for="postcode">Property postcode *</label><input type="text" id="postcode" name="postcode" required autocomplete="postal-code"></div>
+<div class="field"><label for="propertyType">Property type *</label>
+<select id="propertyType" name="propertyType" required>
+<option value="" selected>Select property type</option>
+<option value="detached">Detached House</option>
+<option value="semi-detached">Semi-Detached House</option>
+<option value="terraced">Terraced House</option>
+<option value="bungalow">Bungalow</option>
+<option value="flat">Flat/Apartment</option>
+<option value="new-build">New Build Development</option>
+<option value="conversion">Conversion of an existing building</option>
+<option value="other">Other</option>
+</select></div>
+<div class="field"><label for="service">Service required *</label>
+<select id="service" name="service" required>
+<option value="" selected>Select service</option>
+<option value="sap">SAP Assessment</option>
+<option value="Conversion/Change of Use to Dwelling">Conversion/Change of Use to Dwelling</option>
+<option value="Overheating Assessment">Overheating Assessment</option>
+<option value="Highly Glazed Extension Assessment">Highly Glazed Extension Assessment</option>
+<option value="U-Value Calculation">U-Value Calculation</option>
+<option value="epc">Energy Performance Certificate</option>
+<option value="Planning Energy Statements">Planning Energy &amp; Sustainability Statement</option>
+<option value="Access Statements">Access Statement</option>
+<option value="Percolation Test and Soakaway Design">Percolation Test &amp; Soakaway Design</option>
+<option value="consultancy">Building Standards Consultancy</option>
+<option value="other">Other - please specify below</option>
+</select></div>
+<div class="field full"><label for="message">Additional information</label><textarea id="message" name="message" placeholder="Number of dwellings, construction type, timescales..."></textarea></div>
+<button type="submit" class="submit-button">Get free quote</button>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<a href="#home" class="brand"><img src="img/tc-icon.png" alt=""><span>ThermaCheck Ltd</span></a>
+<span>© 2026 ThermaCheck Ltd · Registered in Scotland · RICS Chartered Building Surveyor · Elmhurst accredited</span>
+<a href="mailto:info@thermacheck.co.uk">info@thermacheck.co.uk</a>
+</div>
+</footer>
+
+<script>
+// Mobile menu and Services dropdown
+const burger = document.querySelector('.burger');
+const menu = document.getElementById('menu');
+burger.addEventListener('click', function () {
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+});
+const ddItem = document.querySelector('.has-dd');
+const ddToggle = document.querySelector('.dd-toggle');
+ddToggle.addEventListener('click', function () {
+  const open = ddItem.classList.toggle('open');
+  ddToggle.setAttribute('aria-expanded', open);
+});
+document.addEventListener('click', function (e) {
+  if (!ddItem.contains(e.target)) { ddItem.classList.remove('open'); ddToggle.setAttribute('aria-expanded', false); }
+});
+menu.querySelectorAll('a[href^="#"]').forEach(function (a) {
+  a.addEventListener('click', function () { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); });
+});
+
+// Form submission - sends to Formspree then redirects to thank-you page
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const submitButton = form.querySelector('.submit-button');
+  submitButton.textContent = 'Sending...';
+  submitButton.disabled = true;
+  try {
+    const response = await fetch('https://formspree.io/f/mpqrbgjj', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      window.location.href = '/thank-you.html';
+    } else {
+      throw new Error('Submission failed');
+    }
+  } catch (error) {
+    submitButton.textContent = 'Get free quote';
+    submitButton.disabled = false;
+    alert('Sorry, there was a problem submitting your enquiry. Please try again or email us directly at info@thermacheck.co.uk');
+  }
+});
+</script>
+</body>
+</html>
