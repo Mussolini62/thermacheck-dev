@@ -1,0 +1,106 @@
+/* ThermaCheck "Option B" theme for the service sites.
+   Loaded after each service page's own <style> block, so these rules override the old orange theme.
+   Hosted on the main site: https://thermacheck.co.uk/theme-b.css */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --tc-ink: #0F1B2E;
+  --tc-ink-2: #16243B;
+  --tc-line-dark: #23334D;
+  --tc-muted-dark: #B8C4D6;
+  --tc-text: #1A2638;
+  --tc-muted: #45556C;
+  --tc-line: #DCE3EC;
+  --tc-amber: #F59E0B;
+  --tc-amber-text: #B45309;
+  --tc-orange: #EA580C;
+}
+
+body { font-family: 'DM Sans', system-ui, sans-serif; color: var(--tc-text); font-size: 17px; }
+h1, h2, .section-title, .quote-section h2 { font-family: 'Sora', system-ui, sans-serif; }
+.container { max-width: 1200px; padding: 0 24px; }
+
+/* Header with thermal stripe */
+header { background: var(--tc-ink); box-shadow: none; border-bottom: 1px solid var(--tc-line-dark); }
+header::before { content: ""; display: block; height: 6px; background: linear-gradient(90deg, #9F1239 0 20%, #DC2626 20% 40%, #EA580C 40% 60%, #F59E0B 60% 80%, #FACC15 80% 100%); }
+nav { padding: 0.85rem 0; }
+.brand { color: #FFFFFF; font-family: 'Sora', sans-serif; font-weight: 700; }
+.brand img { border-radius: 8px; }
+.nav-links { gap: 1.5rem; }
+.nav-links a { color: #E7ECF3; font-weight: 500; font-size: 0.97rem; }
+.nav-links a:hover { color: var(--tc-amber); }
+.nav-links li:last-child a { background: var(--tc-amber); color: var(--tc-ink); font-weight: 700; padding: 0.6rem 1.2rem; border-radius: 999px; }
+.nav-links li:last-child a:hover { background: #FBBF24; color: var(--tc-ink); }
+
+/* Hero */
+.hero { background: var(--tc-ink); padding: 4.5rem 0 5rem; }
+.hero-text .eyebrow { color: var(--tc-amber); letter-spacing: 0.12em; }
+.hero-text h1 { font-size: clamp(2rem, 4.4vw, 3.2rem); line-height: 1.12; color: #FFFFFF; }
+.hero-text p { color: var(--tc-muted-dark); font-size: 1.12rem; }
+.hero-logo img { border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+
+/* Buttons */
+.btn-primary { background: var(--tc-amber); border-color: var(--tc-amber); color: var(--tc-ink); border-radius: 999px; font-weight: 700; }
+.btn-primary:hover { background: #FBBF24; border-color: #FBBF24; color: var(--tc-ink); }
+.btn-secondary { border-color: #4B5E7D; border-radius: 999px; font-weight: 700; }
+.btn-secondary:hover { background: transparent; border-color: #FFFFFF; color: #FFFFFF; }
+
+/* Strips under the hero */
+.credentials, .coverage-strip { background: var(--tc-ink-2); border-bottom: 1px solid var(--tc-line-dark); }
+.credentials p, .coverage-strip p { color: #E7ECF3; font-weight: 500; }
+.coverage-strip strong { color: var(--tc-amber); }
+
+/* Sections */
+section { padding: 4.5rem 0; }
+.section-title { color: var(--tc-text); font-size: clamp(1.7rem, 3vw, 2.3rem); }
+.section-subtitle { color: var(--tc-muted); }
+.alt-bg { background: #F4F6FA; }
+
+.compare-card { border-radius: 18px; box-shadow: none; border: 1px solid var(--tc-line); border-top: 3px solid var(--tc-orange); }
+.compare-card h3 { color: var(--tc-text); }
+.compare-card p { color: var(--tc-muted); }
+
+.step-number { background: var(--tc-ink); color: var(--tc-amber); font-family: 'Sora', sans-serif; }
+.step h3 { color: var(--tc-text); }
+.step p { color: var(--tc-muted); }
+
+.audience-list li { color: var(--tc-text); }
+.audience-list li:before, .price-box .price-body li:before { color: var(--tc-orange); }
+
+.not-for-box { border-radius: 18px; background: #FFF7ED; border-color: #FED7AA; }
+.not-for-box h3 { color: var(--tc-text); }
+
+/* Pricing */
+.price-box { border-radius: 18px; box-shadow: none; border: 1px solid var(--tc-line); }
+.price-box .price-head { background: var(--tc-ink); }
+.price-box .price-head .amount { font-family: 'Sora', sans-serif; color: var(--tc-amber); }
+.price-box .price-head .unit { color: var(--tc-muted-dark); }
+.price-box .price-body li { color: var(--tc-text); }
+.price-note { color: var(--tc-muted); }
+
+/* FAQ */
+.faq-item { border-radius: 14px; box-shadow: none; border: 1px solid var(--tc-line); }
+.faq-item h3 { color: var(--tc-text); }
+.faq-item p { color: var(--tc-muted); }
+
+/* Quote */
+.quote-section { background: var(--tc-ink-2); }
+.quote-section p { color: var(--tc-muted-dark); }
+.contact-card { border-radius: 20px; padding: 2rem 2.25rem; }
+.contact-card p { color: var(--tc-text); }
+.contact-card a.email-link { color: var(--tc-amber-text); }
+.contact-card .submit-button { background: var(--tc-ink); color: #FFFFFF; border-radius: 999px; font-weight: 700; }
+.contact-card .submit-button:hover { background: #1E2E4A; }
+
+/* Footer */
+footer { background: var(--tc-ink); color: var(--tc-muted-dark); border-top: 1px solid var(--tc-line-dark); }
+footer a { color: var(--tc-amber); }
+
+/* Phones: keep the section links visible as a scrollable row */
+@media (max-width: 768px) {
+  nav { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+  .nav-links { display: flex; flex-wrap: nowrap; overflow-x: auto; width: 100%; gap: 1.1rem; padding-bottom: 0.25rem; -webkit-overflow-scrolling: touch; }
+  .nav-links a { white-space: nowrap; font-size: 0.92rem; }
+  .nav-links li:last-child a { padding: 0.45rem 1rem; }
+  .hero { padding: 3rem 0 3.5rem; }
+}
